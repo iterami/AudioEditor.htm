@@ -1,6 +1,9 @@
 'use strict';
 
 function play_audio(){
+    audio_stop_all();
+    core_storage_save();
+
     audio_create({
       'audios': {
         'boop': {
@@ -8,6 +11,7 @@ function play_audio(){
         },
       },
     });
+
     audio_start({
       'id': 'boop',
     });
