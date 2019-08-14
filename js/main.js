@@ -12,8 +12,12 @@ function repo_init(){
       'menu-block-events': false,
       'storage': {
         'duration': .1,
+        'frequency': 100,
+        'type': 'sine',
       },
-      'storage-menu': '<table><tr><td><input id=duration><td>Duration</table>',
+      'storage-menu': '<table><tr><td><input id=duration><td>Duration'
+        + '<tr><td><input id=frequency><td>Frequency'
+        + '<tr><td><input id=type><td>Type</table>',
       'title': 'AudioEditor.htm',
     });
 }

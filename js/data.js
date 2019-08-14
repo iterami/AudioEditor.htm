@@ -8,6 +8,8 @@ function play_audio(){
       'audios': {
         'boop': {
           'duration': core_storage_data['duration'],
+          'frequency': core_storage_data['frequency'],
+          'type': core_storage_data['type'],
         },
       },
     });
