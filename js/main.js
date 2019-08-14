@@ -3,11 +3,14 @@
 function repo_init(){
     core_repo_init({
       'events': {
-        'play-audio': {
+        'audio-play': {
           'onclick': play_audio,
         },
+        'audio-stop': {
+          'onclick': audio_stop_all,
+        },
       },
-      'info': '<input id=play-audio type=button value="Play Audio">',
+      'info': '<input id=audio-play type=button value=Play><input id=audio-stop type=button value=Stop>',
       'menu': true,
       'menu-block-events': false,
       'storage': {
