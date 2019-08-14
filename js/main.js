@@ -20,7 +20,7 @@ function repo_init(){
       },
       'storage-menu': '<table><tr><td><input id=duration><td>Duration'
         + '<tr><td><input id=frequency><td>Frequency'
-        + '<tr><td><input id=type><td>Type</table>',
+        + '<tr><td><select id=type><option value=sawtooth>sawtooth</option><option value=sine>sine</option><option value=square>square</option><option value=triangle>triangle</option></select><td>Type</table>',
       'title': 'AudioEditor.htm',
     });
 }
