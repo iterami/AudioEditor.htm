@@ -10,6 +10,7 @@ function play_audio(){
           'duration': core_storage_data['duration'],
           'frequency': core_storage_data['frequency'],
           'type': core_storage_data['type'],
+          'volume': core_storage_data['volume'],
         },
       },
     });

@@ -17,10 +17,12 @@ function repo_init(){
         'duration': .1,
         'frequency': 100,
         'type': 'sine',
+        'volume': 1,
       },
       'storage-menu': '<table><tr><td><input id=duration><td>Duration'
         + '<tr><td><input id=frequency><td>Frequency'
-        + '<tr><td><select id=type><option value=sawtooth>sawtooth</option><option value=sine>sine</option><option value=square>square</option><option value=triangle>triangle</option></select><td>Type</table>',
+        + '<tr><td><select id=type><option value=sawtooth>sawtooth</option><option value=sine>sine</option><option value=square>square</option><option value=triangle>triangle</option></select><td>Type'
+        + '<tr><td><input id=volume><td>Volume</table>',
       'title': 'AudioEditor.htm',
     });
 }
