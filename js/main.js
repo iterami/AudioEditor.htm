@@ -10,7 +10,9 @@ function repo_init(){
           'onclick': audio_stop_all,
         },
       },
-      'info': '<input id=audio-play type=button value=Play><input id=audio-stop type=button value=Stop>',
+      'info': '<input id=audio-play type=button value=Play><input id=audio-stop type=button value=Stop>'
+        + '<table><tr><td id=baseLatency><td>baseLatency'
+        + '<tr><td id=sampleRate><td>sampleRate</table>',
       'menu': true,
       'menu-block-events': false,
       'storage': {

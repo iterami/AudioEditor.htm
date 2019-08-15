@@ -18,4 +18,11 @@ function play_audio(){
     audio_start({
       'id': 'boop',
     });
+
+    core_ui_update({
+      'ids': {
+        'baseLatency': audio_context.baseLatency,
+        'sampleRate': audio_context.sampleRate,
+      },
+    });
 }
