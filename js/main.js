@@ -26,7 +26,8 @@ function repo_init(){
         + '<tr><td><input id=volume><td>Volume</table>',
       'tabs': {
         'properties': {
-          'content': '<table><tr><td id=baseLatency><td>baseLatency'
+          'content': '<table><tr class=header><td>audio_context<td>Properties'
+            + '<tr><td id=baseLatency><td>baseLatency'
             + '<tr><td id=destination-channelCount><td>destination.channelCount'
             + '<tr><td id=destination-channelCountMode><td>destination.channelCountMode'
             + '<tr><td id=destination-channelInterpretation><td>destination.channelInterpretation'
