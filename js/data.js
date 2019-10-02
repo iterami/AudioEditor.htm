@@ -28,16 +28,23 @@ function play_audio(){
         'destination-maxChannelCount': audio_context.destination.maxChannelCount,
         'destination-numberOfInputs': audio_context.destination.numberOfInputs,
         'destination-numberOfOutputs': audio_context.destination.numberOfOutputs,
-        'listener-forwardX-value': audio_context.listener.forwardX.value,
-        'listener-forwardY-value': audio_context.listener.forwardY.value,
-        'listener-forwardZ-value': audio_context.listener.forwardZ.value,
-        'listener-positionX-value': audio_context.listener.positionX.value,
-        'listener-positionY-value': audio_context.listener.positionY.value,
-        'listener-positionZ-value': audio_context.listener.positionZ.value,
-        'listener-upX-value': audio_context.listener.upX.value,
-        'listener-upY-value': audio_context.listener.upY.value,
-        'listener-upZ-value': audio_context.listener.upZ.value,
         'sampleRate': audio_context.sampleRate,
       },
     });
+
+    if(audio_context.listener.forwardX){
+        core_ui_update({
+          'ids': {
+            'listener-forwardX-value': audio_context.listener.forwardX.value,
+            'listener-forwardY-value': audio_context.listener.forwardY.value,
+            'listener-forwardZ-value': audio_context.listener.forwardZ.value,
+            'listener-positionX-value': audio_context.listener.positionX.value,
+            'listener-positionY-value': audio_context.listener.positionY.value,
+            'listener-positionZ-value': audio_context.listener.positionZ.value,
+            'listener-upX-value': audio_context.listener.upX.value,
+            'listener-upY-value': audio_context.listener.upY.value,
+            'listener-upZ-value': audio_context.listener.upZ.value,
+          },
+        });
+    }
 }
