@@ -20,10 +20,10 @@ function repo_init(){
         'type': 'sine',
         'volume': 1,
       },
-      'storage-menu': '<table><tr><td><input id=duration min=0 type=number><td>Duration'
-        + '<tr><td><input id=frequency min=0 type=number><td>Frequency'
+      'storage-menu': '<table><tr><td><input id=duration min=0 step=any type=number><td>Duration'
+        + '<tr><td><input id=frequency min=0 step=any type=number><td>Frequency'
         + '<tr><td><select id=type><option value=sawtooth>sawtooth</option><option value=sine>sine</option><option value=square>square</option><option value=triangle>triangle</option></select><td>Type'
-        + '<tr><td><input id=volume min=0 type=number><td>Volume</table>',
+        + '<tr><td><input id=volume min=0 step=any type=number><td>Volume</table>',
       'tabs': {
         'properties': {
           'content': '<table><tr class=header><td>audio_context<td>Properties'
