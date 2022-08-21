@@ -2,7 +2,14 @@
 
 function play_audio(){
     audio_stop_all();
-    core_storage_save();
+    core_storage_save({
+      'keys': [
+        'duration',
+        'frequency',
+        'type',
+        'volume',
+      ],
+    });
 
     audio_create({
       'audios': {
