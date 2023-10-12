@@ -70,6 +70,7 @@ function repo_init(){
         + '<span id=properties-tabs></span><div id=properties-tabcontent></div>',
       'menu': true,
       'menu-block-events': false,
+      'menu-lock': true,
       'storage': {
         'duration': .1,
         'frequency': 100,
