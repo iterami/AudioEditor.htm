@@ -64,7 +64,7 @@ function repo_init(){
           'onclick': audio_stop_all,
         },
       },
-      'info': '<input id=audio-play type=button value=Play><input id=audio-stop type=button value=Stop><br>'
+      'info': '<button id=audio-play type=button>Play</button><button id=audio-stop type=button>Stop</button><br>'
         + '<span id=properties-tabs></span><div id=properties-tabcontent></div>',
       'menu': true,
       'menu-block-events': false,
