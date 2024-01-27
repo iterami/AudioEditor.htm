@@ -66,7 +66,6 @@ function repo_init(){
       },
       'info': '<button id=audio-play type=button>Play</button><button id=audio-stop type=button>Stop</button><br>'
         + '<span id=properties-tabs></span><div id=properties-tabcontent></div>',
-      'menu': true,
       'menu-block-events': false,
       'menu-lock': true,
       'storage': {
