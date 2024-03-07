@@ -20,9 +20,7 @@ function play_audio(){
       },
     });
 
-    audio_start({
-      'id': 'boop',
-    });
+    audio_start('boop');
 
     core_ui_update({
       'ids': {
