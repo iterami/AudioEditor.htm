@@ -28,7 +28,7 @@ function repo_init(){
       },
       'info': '<button id=audio-play type=button>Play</button><br>',
       'menu_block_events': false,
-      'menu-lock': true,
+      'menu_lock': true,
       'storage': {
         'duration': .1,
         'frequency': 100,
