@@ -27,7 +27,7 @@ function repo_init(){
         },
       },
       'info': '<button id=audio-play type=button>Play</button><br>',
-      'menu-block-events': false,
+      'menu_block_events': false,
       'menu-lock': true,
       'storage': {
         'duration': .1,
