@@ -35,7 +35,7 @@ function repo_init(){
         'type': 'sine',
         'volume': 1,
       },
-      'storage-menu': '<table><tr><td><input id=duration min=0 step=any type=number><td>Duration'
+      'storage_menu': '<table><tr><td><input id=duration min=0 step=any type=number><td>Duration'
         + '<tr><td><input id=frequency min=0 step=any type=number><td>Frequency'
         + '<tr><td><select id=type><option value=sawtooth>sawtooth<option value=sine>sine<option value=square>square<option value=triangle>triangle</select><td>Type'
         + '<tr><td><input id=volume min=0 step=any type=number><td>Volume</table>',
