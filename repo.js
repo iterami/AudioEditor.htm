@@ -1,13 +1,6 @@
 'use strict';
 
 function play_audio(){
-    core_storage_save([
-      'duration',
-      'frequency',
-      'type',
-      'volume',
-    ]);
-
     audio_create({
       'test': {
         'duration': core_storage_data.duration,
