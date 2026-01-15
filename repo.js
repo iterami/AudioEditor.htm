@@ -10,6 +10,15 @@ function play_audio(){
       },
     });
     audio_start('test');
+
+    core_ui_update({
+      'ids': {
+        'baseLatency': audio_context.baseLatency,
+        'currentTime': audio_context.currentTime,
+        'outputLatency': audio_context.outputLatency,
+        'sampleRate': audio_context.sampleRate,
+      },
+    });
 }
 
 function repo_init(){
@@ -19,11 +28,15 @@ function repo_init(){
           'onclick': play_audio,
         },
       },
-      'info': '<button id=audio-play type=button>Play</button><br>',
+      'info': '<button id=audio-play type=button>Play</button><br><table>'
+        + '<tr><td>baseLatency<td id=baseLatency>'
+        + '<tr><td>currentTime<td id=currentTime>'
+        + '<tr><td>outputLatency<td id=outputLatency>'
+        + '<tr><td>sampleRate<td id=sampleRate></table>',
       'menu_block_events': false,
       'menu_lock': true,
       'storage': {
-        'duration': .1,
+        'duration': .15,
         'frequency': 100,
         'type': 'sine',
         'volume': 1,
