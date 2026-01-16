@@ -14,7 +14,13 @@ function play_audio(){
     core_ui_update({
       'ids': {
         'baseLatency': audio_context.baseLatency,
+        'channelCount': audio_context.destination.channelCount,
+        'channelCountMode': audio_context.destination.channelCountMode,
+        'channelInterpretation': audio_context.destination.channelInterpretation,
         'currentTime': audio_context.currentTime,
+        'maxChannelCount': audio_context.destination.maxChannelCount,
+        'numberOfInputs': audio_context.destination.numberOfInputs,
+        'numberOfOutputs': audio_context.destination.numberOfOutputs,
         'outputLatency': audio_context.outputLatency,
         'sampleRate': audio_context.sampleRate,
         'state': audio_context.state,
@@ -29,12 +35,19 @@ function repo_init(){
           'onclick': play_audio,
         },
       },
-      'info': '<button id=audio-play type=button>Play</button><br><table>'
+      'info': '<button class=medium id=audio-play type=button>Play</button><br><table><tr class=header><td>AudioContext<td>Properties'
         + '<tr><td>baseLatency<td id=baseLatency>'
         + '<tr><td>currentTime<td id=currentTime>'
         + '<tr><td>outputLatency<td id=outputLatency>'
         + '<tr><td>sampleRate<td id=sampleRate>'
-        + '<tr><td>state<td id=state></table>',
+        + '<tr><td>state<td id=state>'
+        + '<tr class=header><td>Destination<td>Properties'
+        + '<tr><td>channelCount<td id=channelCount>'
+        + '<tr><td>channelCountMode<td id=channelCountMode>'
+        + '<tr><td>channelInterpretation<td id=channelInterpretation>'
+        + '<tr><td>maxChannelCount<td id=maxChannelCount>'
+        + '<tr><td>numberOfInputs<td id=numberOfInputs>'
+        + '<tr><td>numberOfOutputs<td id=numberOfOutputs></table>',
       'menu_block_events': false,
       'menu_lock': true,
       'storage': {
