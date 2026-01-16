@@ -31,7 +31,7 @@ function play_audio(){
 function repo_init(){
     core_repo_init({
       'events': {
-        'audio-play': {
+        'audio_play': {
           'onclick': play_audio,
         },
       },
