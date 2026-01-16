@@ -17,6 +17,7 @@ function play_audio(){
         'currentTime': audio_context.currentTime,
         'outputLatency': audio_context.outputLatency,
         'sampleRate': audio_context.sampleRate,
+        'state': audio_context.state,
       },
     });
 }
@@ -32,7 +33,8 @@ function repo_init(){
         + '<tr><td>baseLatency<td id=baseLatency>'
         + '<tr><td>currentTime<td id=currentTime>'
         + '<tr><td>outputLatency<td id=outputLatency>'
-        + '<tr><td>sampleRate<td id=sampleRate></table>',
+        + '<tr><td>sampleRate<td id=sampleRate>'
+        + '<tr><td>state<td id=state></table>',
       'menu_block_events': false,
       'menu_lock': true,
       'storage': {
