@@ -7,6 +7,23 @@
 
 <button class=medium id=audio_play type=button>Play</button>
 <table>
+  <tr>
+    <td>Duration
+    <td><input id=duration min=0 step=any type=number>
+  <tr>
+    <td>Frequency
+    <td><input id=frequency min=0 step=any type=number>
+  <tr>
+    <td>Type
+    <td><select id=type>
+      <option value=sawtooth>sawtooth
+      <option value=sine>sine
+      <option value=square>square
+      <option value=triangle>triangle
+    </select>
+  <tr>
+    <td>Volume
+    <td><input id=volume min=0 step=any type=number>
   <tr class=header>
     <td>AudioContext
     <td>Properties
