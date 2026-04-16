@@ -28,6 +28,10 @@ function play_audio(){
     });
 }
 
+function repo_escape(){
+    audio_state_all(!core_menu_open);
+}
+
 function repo_init(){
     core_repo_init({
       'events': {
