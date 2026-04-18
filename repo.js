@@ -35,7 +35,7 @@ function repo_escape(){
 function repo_init(){
     core_repo_init({
       'events': {
-        'audio_play': {
+        'play_button': {
           'onclick': play_audio,
         },
       },
